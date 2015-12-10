@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <servlet>
+        <servlet-name>LogDemoServlet</servlet-name>
+        <servlet-class>com.github.bingoohuang.servletdemo.LogDemoServlet</servlet-class>
+    </servlet>
+
+    <!-- http://127.0.0.1:7001/yy/LogDemo/efg -->
+    <servlet-mapping>
+        <servlet-name>LogDemoServlet</servlet-name>
+        <url-pattern>/LogDemo/*</url-pattern>
+    </servlet-mapping>
+</web-app>
